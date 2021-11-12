@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>页面标题</title>
+    <style>
+        #login_form label {
+            display: block;
+            width: 4em;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <object id="swf_001" width="600" height="400"
+            data="/swf/flash001.swf"
+            type="application/x-shockwave-flash">
+    </object>
+    <embed src="/swf/flash001.swf" />
+    <iframe src="HtmlPage.html"></iframe>
+    <h1>测试内容</h1>
+    <div>块元素1</div>
+    <div>块元素2</div>
+    <div>块元素3</div>
+    <span>内联元素1</span>
+    <span>内联元素2</span>
+    <span>内联元素3</span>
+    <span>内联元素4</span>
+    <span>内联元素5</span>
+    页面的文本内容！！！
+    第一行<br />
+    第二行<br />
+    第三行
+    <h1>标题一</h1>
+    <h2>标题二</h2>
+    <h3>标题三</h3>
+    <h4>标题四</h4>
+    <h5>标题五</h5>
+    <h6>标题六</h6>
+    <p>段落一</p>
+    <p>段落二</p>
+    HTML中，&lt;br&gt;标记用于换行
+    版权所有&#169;
+    普通文本
+    <b>加粗</b>
+    <i>斜体</i>
+    <u>下划线</u>
+    <sub>下标</sub>
+    <sup>上标</sup>
+    <del>s元素</del>
+    <s>s元素</s>
+    <abbr>abbr元素</abbr>
+    <address>address元素</address>
+    <q>q元素</q>
+    <blockquote>address元素</blockquote>
+    <ins>ins元素</ins>
+    <em>em元素</em>
+    <strong>strong元素</strong>
+    <cite>cite元素</cite>
+    <mark>mark元素</mark>
+    <small>small元素</small>
+    <time datetime="2019-1-19">2019年1月19日</time>
+    <time datetime="19:30">晚上7点30分</time>
+    <code>code元素</code>
+    <pre>
+int sum=0;
+for(int i=0;i<=100;i++)
+{
+    sum+=i;
+    Console.WriteLine(sum);
+}
+    </pre>
+    <ol typeof="1">
+        <li>三厢轿车</li>
+        <li>两厢轿车</li>
+        <li>旅行车</li>
+        <li>SUV</li>
+        <li>GT</li>
+    </ol>
+    <ul>
+        <li><a href="">图书</a></li>
+        <li><a href="">应用</a></li>
+        <li><a href="">开发资源</a></li>
+    </ul>
+    <dl>
+        <dt>三厢轿车</dt>
+        <dd>适用于商务、家用</dd>
+        <dt>SUV</dt>
+        <dd>适用于商务、家用及轻度越野</dd>
+        <dt>GT</dt>
+        <dd>享受驾驶乐趣、家用</dd>
+    </dl>
+    <table border="1" cellspacing="10" cellpadding="0">
+        <caption>SUV配置单</caption>
+        <colgroup>
+            <col style="background-color:#bbb;" />
+        </colgroup>
+        <colgroup style="background-color:#ddd;">
+            <col />
+            <col />
+            <col />
+        </colgroup>
+        <tbody>
+            <tr style="background-color:#bbb;">
+                <th>项目</th>
+                <th>基本型</th>
+                <th>精英型</th>
+                <th>尊贵型</th>
+            </tr>
+            <tr>
+                <td>GPS</td>
+                <td>*</td>
+                <td colspan="2">有</td>
+            </tr>
+            <tr>
+                <td>雷达</td>
+                <td colspan="3">有</td>
+            </tr>
+            <tr>
+                <td>倒车影像</td>
+                <td colspan="2">*</td>
+                <td>有</td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="img/logo.png" alt="logo image" />
+    <a href="http://caohuayu.com" target="_blank" title="CHY软件小屋">
+        作者的网站
+    </a>
+    <a href="mailto:chydev@163.com" target="_blank">
+        给作者发邮件
+    </a>
+    <a href="javascript:alert('Hello, A element.');">
+        消息对话框
+    </a>
+    <form id="login_form" action="Default.aspx" method="get">
+        <select name="car_type" size="5">
+            <option value="1">轿车</option>
+            <option value="2">跑车</option>
+            <option value="3">SUV</option>
+        </select>
+        <select name="car_type" size="1">
+            <option value="1">轿车</option>
+            <option value="2">跑车</option>
+            <option value="3">SUV</option>
+        </select>
+        <select name="car_type" size="10" multiple>
+            <optgroup label="汽车">
+                <option value="1001">轿车</option>
+                <option value="1002">跑车</option>
+                <option value="1003">SUV</option>
+            </optgroup>
+            <optgroup label="食物">
+                <option value="2001">面包</option>
+                <option value="2002">饼干</option>
+            </optgroup>
+        </select>
+        <textarea cols="30" rows="6"></textarea>
+        <button type="button" onclick="save_click();">
+            <img src="/img/save22b.png" alt="save" align="top" />
+            保存
+        </button>
+        <input type="date" />
+        <input id="cur_value" type="text" />
+        <input type="range" min="0" max="100" value="15"
+               onchange="document.getElementById('cur_value').value = this.value;" />
+        <input type="text" placeholder="请输入登录名" />
+        <input type="email" placeholder="xxx@xxx.xxx" />
+        <input type="text" list="car_type" />
+        <datalist id="car_type">
+            <option>轿车</option>
+            <option>SUV</option>
+            <option>轿跑</option>
+            <option>越野</option>
+            <option>旅行车</option>
+        </datalist>
+        <p>
+            <label for="username">用户名</label>
+            <input type="text" id="username" name="username" size="15" maxlength="15" required />
+        </p>
+        <p>
+            <label for="userpwd">密码</label>
+            <input type="password" id="userpwd" name="userpwd" maxlength="15" size="15" required />
+        </p>
+        <p>
+            <input type="reset" value="清空" />
+            <input type="submit" value="登录" />
+        </p>
+        <input type="checkbox" name="auto_type" value="car" />轿车<br />
+        <input type="checkbox" name="auto_type" value="suv" />SUV<br />
+        <input type="checkbox" name="auto_type" value="coupe" />Coupe<br />
+        <input type="checkbox" name="accept" checked />同意本条款
+        <fieldset>
+            <legend>性别</legend>
+            <input type="radio" name="sex" value="0" checked />保密
+            <input type="radio" name="sex" value="1" />男
+            <input type="radio" name="sex" value="2" />女
+        </fieldset>
+        <br />
+        <fieldset>
+            <input type="radio" name="sex" value="0" checked />保密
+            <input type="radio" name="sex" value="1" />男
+            <input type="radio" name="sex" value="2" />女
+        </fieldset>
+        <input type="submit" value="提交" />
+        <input type="hidden" id="data1" value="hello" />
+        <input type="button" value="显示隐藏数据"
+               onclick="alert(document.getElementById('data1').value);" />
+    </form>
+</body>
+</html>
+<script>
+    function save_click() {
+        //提交表单
+        document.forms[0].submit();
+    }
+</script>
